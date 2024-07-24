@@ -150,7 +150,7 @@ AnimatorStateMachine:
     m_Position: {x: 360, y: 0, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4618814011029238312}
-    m_Position: {x: 368.4633, y: 114.34903, z: 0}
+    m_Position: {x: 370, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8999981689567796893}
     m_Position: {x: 672.96155, y: 1.9940643, z: 0}
@@ -225,7 +225,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Climbing
-  m_Speed: 0.2
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -3588553185144071201}
