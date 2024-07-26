@@ -12,7 +12,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float climbSpeed = 200f;
 
     private Animator animator;
-    private new CapsuleCollider2D collider2D;
+    private CapsuleCollider2D bodyCollider;
+    private BoxCollider2D feetCollider;
+
     private bool canDoubleJump = true;
 
 
@@ -24,7 +26,8 @@ public class PlayerMovement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        collider2D = GetComponent<CapsuleCollider2D>();
+        bodyCollider = GetComponent<CapsuleCollider2D>();
+        feetCollider = GetComponent<BoxCollider2D>();
 
         initialGravityScale = rb.gravityScale; // Store the initial gravity scale
     }
@@ -39,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
     private void Climb()
     {
         // if the player is not touching the ladder, do nothing
-        if (!collider2D.IsTouchingLayers(LayerMask.GetMask("Climb")))
+        if (!feetCollider.IsTouchingLayers(LayerMask.GetMask("Climb")))
         {
             animator.SetBool("isClimbing", false);
             rb.gravityScale = initialGravityScale; // Set the gravity scale to the initial value
@@ -81,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
         if (value.isPressed)
         {
             // Check if the player is on the ground using IsTouchingLayer
-            if (collider2D.IsTouchingLayers(LayerMask.GetMask("Ground")))
+            if (feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
             {
                 // Player is on the ground, perform the jump
                 rb.velocity += Vector2.up * jumpForce;
