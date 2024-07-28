@@ -35,7 +35,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6749888770901417778}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1028584089063770098
@@ -98,7 +99,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 791686969
-  m_SortingLayer: 5
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -788660035, guid: 47b75718bad7a254082d1b23a652bc93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -218,6 +219,9 @@ MonoBehaviour:
   runSpeed: 350
   jumpForce: 16
   climbSpeed: 200
+  deathKick: {x: 20, y: 20}
+  projectileSpawnPoint: {fileID: 6749888770901417778}
+  projectilePrefab: {fileID: 5962996753696650731, guid: d7eb7edd57b03504bbd7de28359a706e, type: 3}
 --- !u!61 &5676950389989404668
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -227,7 +231,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1313454086400152673}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 87e47cc82bd38d54ea9183714580f683, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -263,3 +267,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4402218, y: 0.100402355}
   m_EdgeRadius: 0
+--- !u!1 &8047036660044621041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6749888770901417778}
+  m_Layer: 8
+  m_Name: ProjectileSpawnPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6749888770901417778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8047036660044621041}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.275, y: -0.218, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 336892322566438808}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

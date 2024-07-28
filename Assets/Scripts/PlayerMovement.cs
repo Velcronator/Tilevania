@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private float climbSpeed = 200f;
     [SerializeField] private Vector2 deathKick = new Vector2(20f, 20f);
+    [SerializeField] private Transform projectileSpawnPoint;
+    [SerializeField] private GameObject projectilePrefab;
 
     private Animator animator;
     private CapsuleCollider2D bodyCollider;
@@ -104,6 +106,15 @@ public class PlayerMovement : MonoBehaviour
                 canDoubleJump = false; // Disable double jump
             }
         }
+    }
+
+    private void OnFire(InputValue value)
+    {
+        if (!isAlive) return;
+        // todo animator.SetTrigger("Attack");
+        GameObject projectile = Instantiate(projectilePrefab, projectileSpawnPoint.position, Quaternion.identity);
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
