@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 5676950389989404668}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 791686969
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: -788660035, guid: 47b75718bad7a254082d1b23a652bc93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -222,6 +222,7 @@ MonoBehaviour:
   deathKick: {x: 20, y: 20}
   projectileSpawnPoint: {fileID: 6749888770901417778}
   projectilePrefab: {fileID: 5962996753696650731, guid: d7eb7edd57b03504bbd7de28359a706e, type: 3}
+  projectileSpeed: 10
 --- !u!61 &5676950389989404668
 BoxCollider2D:
   m_ObjectHideFlags: 0
