@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private int playerLives = 3;
+    [SerializeField] private TextMeshProUGUI livesText;
+    [SerializeField] private TextMeshProUGUI coinsText;
 
     // Singleton pattern
     private static GameManager _instance;
@@ -23,8 +26,8 @@ public class GameManager : MonoBehaviour
     }
 
     public int CoinsCount { get; private set; }
-    public event Action<int> OnLivesChanged;
-    public event Action<int> OnCoinsCountChanged;
+    //public event Action<int> OnLivesChanged;
+    //public event Action<int> OnCoinsCountChanged;
 
     private void Awake()
     {
@@ -44,6 +47,12 @@ public class GameManager : MonoBehaviour
     {
         playerLives = 3;
         CoinsCount = 0;
+    }
+
+    private void Start()
+    {
+        livesText.text = playerLives.ToString();
+        coinsText.text = CoinsCount.ToString();
     }
 
     public void ProcessPlayerDeath()
@@ -67,7 +76,7 @@ public class GameManager : MonoBehaviour
     private void TakeLife()
     {
         playerLives--;
-        OnLivesChanged?.Invoke(playerLives);
+        livesText.text = playerLives.ToString();
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
     }
@@ -80,6 +89,6 @@ public class GameManager : MonoBehaviour
     public void AddScore(int score)
     {
         CoinsCount += score;
-        OnCoinsCountChanged?.Invoke(CoinsCount);
+        coinsText.text = CoinsCount.ToString();
     }
 }
