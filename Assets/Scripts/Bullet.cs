@@ -32,7 +32,6 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Bullet OnTriggerEnter2D with " + collision.gameObject.name);
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("OnTriggerEnter2D Enemy hit!");
@@ -45,7 +44,6 @@ public class Bullet : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Bullet collided with " + collision.gameObject.name);
             Destroy(collision.gameObject);
         }
         Destroy(gameObject);

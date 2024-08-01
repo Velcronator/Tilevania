@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private float projectileSpeed = 10f;
 
-    private GameSession gameSession;
+    private GameManager gameSession;
 
     private Animator animator;
     private CapsuleCollider2D bodyCollider;
@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         bodyCollider = GetComponent<CapsuleCollider2D>();
         feetCollider = GetComponent<BoxCollider2D>();
-        gameSession = FindObjectOfType<GameSession>();
+        gameSession = FindObjectOfType<GameManager>();
         initialGravityScale = rb.gravityScale;
     }
 

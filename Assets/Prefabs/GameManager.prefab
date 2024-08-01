@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8660376032872510363}
   - component: {fileID: 6239844912022239532}
   m_Layer: 0
-  m_Name: GameSession
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,6 +41,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1531965344350300916}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f4c1b8f0669d8648bd8a040ef653d2c, type: 3}
+  m_Script: {fileID: 11500000, guid: c554b923939700a4ba4c7c587ffb0f2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLives: 3

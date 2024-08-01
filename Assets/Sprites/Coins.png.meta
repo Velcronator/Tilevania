@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7ebefa088ae232a43b2a3d309742eb5c
+guid: b558c74717d4f8f46b0ebb3db83328a2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPA_Coins_0
+      name: Coins_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,17 +150,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8ab55c7467973e46b0fd9404071cea2
-      internalID: -1391312152
+      spriteID: 8bfa91eec7f08b44b8a4ef85449383a6
+      internalID: 779205143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Coins_1
+      name: Coins_1
       rect:
         serializedVersion: 2
-        x: 38
+        x: 32
         y: 0
         width: 32
         height: 32
@@ -171,17 +171,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c690f9bb5651034a8942df4a7d95255
-      internalID: -2096842975
+      spriteID: 0120744e3e7b82c448601205564bfd9b
+      internalID: -420661870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Coins_2
+      name: Coins_2
       rect:
         serializedVersion: 2
-        x: 76
+        x: 64
         y: 0
         width: 32
         height: 32
@@ -192,17 +192,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 318b6b49ffcef704cb48b1d8c5ab148c
-      internalID: -685194472
+      spriteID: a7d5ed2bba150a74885df0a3597482f8
+      internalID: -767716996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Coins_3
+      name: Coins_3
       rect:
         serializedVersion: 2
-        x: 114
+        x: 96
         y: 0
         width: 32
         height: 32
@@ -213,17 +213,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4d4cefb24558f948ad5b6fb3b1ecf9b
-      internalID: -2023496046
+      spriteID: 65f6161964735f448b138f88c4d53b53
+      internalID: 1541695180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Coins_4
+      name: Coins_4
       rect:
         serializedVersion: 2
-        x: 152
+        x: 128
         y: 0
         width: 32
         height: 32
@@ -234,17 +234,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a12f70753bfcdb041baa96e61c725c16
-      internalID: 1757365869
+      spriteID: 7c811b659ef047e4ab60a666a65548aa
+      internalID: 1022099418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Coins_5
+      name: Coins_5
       rect:
         serializedVersion: 2
-        x: 190
+        x: 160
         y: 0
         width: 32
         height: 32
@@ -255,17 +255,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ecb8f77dbb830d418f7cac65e650314
-      internalID: 1204117473
+      spriteID: 0f103d538f9053d40b3fa0fe6904754c
+      internalID: 1131197486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Coins_6
+      name: Coins_6
       rect:
         serializedVersion: 2
-        x: 228
+        x: 192
         y: 0
         width: 32
         height: 32
@@ -276,17 +276,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a6026a33d881c74d907252c69b8d92e
-      internalID: -1407326452
+      spriteID: 348e38b1f95b4704eb849d586be66751
+      internalID: 625843160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Coins_7
+      name: Coins_7
       rect:
         serializedVersion: 2
-        x: 266
+        x: 224
         y: 0
         width: 32
         height: 32
@@ -297,17 +297,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 224f1e6d37e707246beba0e7068893f0
-      internalID: 384216007
+      spriteID: 3edfd0014295519448512c072cf9f089
+      internalID: 1314900645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Coins_8
+      name: Coins_8
       rect:
         serializedVersion: 2
-        x: 304
+        x: 256
         y: 0
         width: 32
         height: 32
@@ -318,17 +318,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 037ba7e4a7b38d34686c398c21b0902a
-      internalID: -1795963354
+      spriteID: 082d3b17654d6434f8ee9d04a4f07953
+      internalID: -358763049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Coins_9
+      name: Coins_9
       rect:
         serializedVersion: 2
-        x: 342
+        x: 288
         y: 0
         width: 32
         height: 32
@@ -339,50 +339,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7805bb8924744b4aaa7ffd892872ce8
-      internalID: -1021828613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPA_Coins_10
-      rect:
-        serializedVersion: 2
-        x: 380
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 298f658b6a1e4a7418e442ed7fc9d050
-      internalID: -37602482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPA_Coins_11
-      rect:
-        serializedVersion: 2
-        x: 418
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e04521a16c63b544b9d3f44de084a1b7
-      internalID: -1629650015
+      spriteID: 99340e12fba7f4543b5bc9e2ec808e26
+      internalID: -318507709
       vertices: []
       indices: 
       edges: []
@@ -398,18 +356,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPA_Coins_0: -1391312152
-      SPA_Coins_1: -2096842975
-      SPA_Coins_10: -37602482
-      SPA_Coins_11: -1629650015
-      SPA_Coins_2: -685194472
-      SPA_Coins_3: -2023496046
-      SPA_Coins_4: 1757365869
-      SPA_Coins_5: 1204117473
-      SPA_Coins_6: -1407326452
-      SPA_Coins_7: 384216007
-      SPA_Coins_8: -1795963354
-      SPA_Coins_9: -1021828613
+      Coins_0: 779205143
+      Coins_1: -420661870
+      Coins_2: -767716996
+      Coins_3: 1541695180
+      Coins_4: 1022099418
+      Coins_5: 1131197486
+      Coins_6: 625843160
+      Coins_7: 1314900645
+      Coins_8: -358763049
+      Coins_9: -318507709
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
