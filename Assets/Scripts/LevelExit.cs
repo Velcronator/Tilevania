@@ -26,6 +26,7 @@ public class LevelExit : MonoBehaviour
         // Load the next level
         if (!string.IsNullOrEmpty(nextLevelName))
         {
+            FindObjectOfType<ScenePersist>().ResetScenePersist();
             SceneManager.LoadScene(nextLevelName);
         }
         else
@@ -33,7 +34,7 @@ public class LevelExit : MonoBehaviour
             // If no next level is specified, load the next scene in the build settings order
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             int nextSceneIndex = currentSceneIndex + 1;
-
+            FindObjectOfType<ScenePersist>().ResetScenePersist();
             if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
             {
                 SceneManager.LoadScene(nextSceneIndex);
